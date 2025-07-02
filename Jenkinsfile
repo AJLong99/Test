@@ -4,7 +4,7 @@ pipeline {
         
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/AJLong99/Test'
+                git branch: 'main', url: 'https://github.com/AJLong99/Test'
           }
         }
         stage('Build') {
